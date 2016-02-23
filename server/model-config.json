@@ -33,9 +33,17 @@
     "public": false
   },
   "Clinic": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "Doctor": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Patient": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }

@@ -1,18 +1,24 @@
 {
-  "name": "Clinic",
+  "name": "Patient",
   "base": "PersistedModel",
-  "strict": false,
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-
-    "ClinicName": {
+    "Name": {
       "type": "string",
       "required": true
     },
-    "Address": {
+    "LastName": {
+      "type": "string",
+      "required": true
+    },
+    "Age": {
+      "type": "number",
+      "required": true
+    },
+    "Gender": {
       "type": "string",
       "required": true
     },
@@ -22,18 +28,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "Doctor": {
-      "type": "hasMany",
-      "model": "Doctor",
-      "foreignKey": "DoctorID"
-    },
-    "Patient": {
-      "type": "hasMany",
-      "model": "Patient",
-      "foreignKey": "PatientID"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

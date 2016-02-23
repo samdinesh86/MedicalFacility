@@ -1,14 +1,12 @@
 {
-  "name": "Clinic",
+  "name": "Doctor",
   "base": "PersistedModel",
-  "strict": false,
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-
-    "ClinicName": {
+    "Name": {
       "type": "string",
       "required": true
     },
@@ -19,19 +17,24 @@
     "Phone": {
       "type": "number",
       "required": true
+    },
+    "Qualification": {
+      "type": "string",
+      "required": true
+    },
+    "Designation": {
+      "type": "string"
+    },
+    "Experience": {
+      "type": "string"
     }
   },
   "validations": [],
   "relations": {
-    "Doctor": {
-      "type": "hasMany",
-      "model": "Doctor",
-      "foreignKey": "DoctorID"
-    },
     "Patient": {
       "type": "hasMany",
       "model": "Patient",
-      "foreignKey": "PatientID"
+      "foreignKey": ""
     }
   },
   "acls": [],
