@@ -15,6 +15,7 @@
   },
   "User": {
     "dataSource": "mongodb"
+
   },
   "AccessToken": {
     "dataSource": "mongodb",
@@ -43,6 +44,10 @@
     "public": true
   },
   "Patient": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "admin": {
     "dataSource": "mongodb",
     "public": true
   }
