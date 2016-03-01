@@ -4,9 +4,9 @@
     "connector": "memory"
   },
   "mongodb": {
-    "host": "127.0.0.1",
+    "host": "localhost",
     "port": 27017,
-    "database": "FullStack",
+    "database": "Demo",
     "name": "mongodb",
     "connector": "mongodb"
   }

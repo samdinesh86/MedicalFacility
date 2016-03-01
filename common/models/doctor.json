@@ -6,6 +6,11 @@
     "validateUpsert": true
   },
   "properties": {
+    "DoctorID": {
+      "type": "number", 
+      "generated": true, 
+      "id": true
+      },
     "Name": {
       "type": "string",
       "required": true
@@ -34,6 +39,11 @@
     "Patient": {
       "type": "hasMany",
       "model": "Patient",
+      "foreignKey": ""
+    },
+     "clinic": {
+      "type": "belongsTo",
+      "model": "Clinic",
       "foreignKey": ""
     }
   },
